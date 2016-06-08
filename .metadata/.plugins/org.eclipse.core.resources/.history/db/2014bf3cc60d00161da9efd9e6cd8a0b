@@ -1,0 +1,24 @@
+package graficos;
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class EventosTeclado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoConTeclas mimarco=new MarcoConTeclas();
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+
+}
+
+class MarcoConTeclas extends JFrame{
+	public MarcoConTeclas(){
+		setVisible(true);
+		setBounds(300,300,400,350);
+		
+	}
+}

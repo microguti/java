@@ -1,0 +1,10 @@
+package Avanzado;
+
+public class Areas_Peso {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

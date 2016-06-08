@@ -1,0 +1,66 @@
+package graficos;
+import javax.swing.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class Eventos_Raton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoRaton mimarco=new MarcoRaton();
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+
+}
+
+class MarcoRaton extends JFrame{
+	public MarcoRaton(){
+		setVisible(true);
+		setBounds(300,300,400,350);
+		
+		//creamos una instancia de la clase que implementa mouselistener
+		EventosDeRaton EventoRaton=new EventosDeRaton();
+		//ponemos a la escucha la instancia creada
+		addMouseListener(EventoRaton);
+	}
+}
+
+/*clase que implemente mouselistener
+class EventosDeRaton implements MouseListener{
+
+	public void mouseClicked(MouseEvent e) {
+		System.out.println("has hecho click");
+	}
+
+	public void mousePressed(MouseEvent e) {
+		System.out.println("has presionado");
+		
+	}
+
+	public void mouseReleased(MouseEvent e) {
+		System.out.println("acabas de levantar");
+		
+	}
+
+	public void mouseEntered(MouseEvent e) {
+		System.out.println("has entrado");
+		
+	}
+
+	public void mouseExited(MouseEvent e) {
+		System.out.println("has salido");
+		
+	}
+	
+}
+*/
+//podemos como siempre utilizar las clases adaptadoras para implementar solo lo que queramos
+class EventosDeRaton extends MouseAdapter{
+	public void mouseClicked(MouseEvent e){
+		System.out.println("Has hecho click");
+		System.out.println(" coordenada x: "+e.getX()+" Coordenada y: "+e.getY());
+		System.out.println(e.getClickCount());
+	}
+}
