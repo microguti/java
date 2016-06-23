@@ -32,15 +32,15 @@ class Leer_fichero1{
 			// TODO Auto-generated catch block
 			System.out.println("No se encuentra el fichero");
 		}finally{
-			
-		}
+				
 			try {
 				entrada.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				}
 			}
-	}
+		}
 		private FileReader entrada;
 }
 

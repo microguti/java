@@ -1,0 +1,6 @@
+[20-Feb-2015 12:46:35 UTC] Error Lost connection to MySQL server during query de la base de datos de WordPress para la consulta 
+					SELECT option_name
+					FROM   hfcb_options
+					WHERE  option_name LIKE '%_transient_wpseo_sitemap_cache%'
+				 realizada por Plugin_Upgrader->bulk_upgrade, WP_Upgrader->run, WP_Upgrader->install_package, apply_filters('upgrader_post_install'), call_user_func_array, WPSEO_Admin->remove_transients_on_update
+[20-Feb-2015 12:46:43 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/u313276241/public_html/wp-admin/includes/class-wp-filesystem-direct.php on line 187
